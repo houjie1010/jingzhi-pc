@@ -2,19 +2,15 @@
   <div class="layout-aside">
     <!-- 头部logo -->
     <div class="title">
-      <p>
-        静&nbsp;待&nbsp;
-        <span>花</span>&nbsp;开
-      </p>
+      <img src="../../assets/img/w7.jpg" alt />
     </div>
     <!-- 导航菜单 开启路由模式 :router="true"(完整模式) router(简写模式)  -->
     <el-menu router background-color="#eed6f3" text-color="#e05fd8">
-      <!-- 子菜单 没有子菜单的 用 el-menu-item标签 -->
       <el-menu-item index="/home">
         <i class="el-icon-s-home"></i>
         <span>首页</span>
       </el-menu-item>
-      <!-- 二级菜单 需要用submenu -->
+      <!-- 二级菜单 submenu -->
       <el-submenu index="2">
         <template slot="title">
           <i class="el-icon-s-grid"></i>
@@ -54,25 +50,21 @@ export default {
 
 <style lang='less' scoped>
 .layout-aside {
-  background-color: #81c3fa;
+  background-color: #3175f5;
   width: 230px;
   height: 100vh;
   .title {
     text-align: center;
     padding: 10px 0;
-    p {
-      font-size: 26px;
-      color: lightcyan;
-      span {
-        color: lavenderblush;
-      }
+    img {
+      width: 230px;
     }
   }
-  .el-menu {
-    border-right: none;
-    i {
-      color: #e05fd8;
-    }
+}
+.el-menu {
+  border-right: none;
+  i {
+    color: #e05fd8;
   }
 }
 </style>

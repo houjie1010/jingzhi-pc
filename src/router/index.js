@@ -8,7 +8,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: '/home' // 强制跳转到home页
+    redirect: '/home' // 强制跳转
   },
   {
     path: '/home',

@@ -5,7 +5,7 @@
     <el-col class="left" :span="12">
       <!-- 图标 -->
       <i class="el-icon-s-fold"></i>
-      <span>花点时间&nbsp;发现&nbsp;她的美</span>
+      <span>花点时间发现她的美</span>
     </el-col>
     <!-- 右侧列 -->
     <el-col class="right" :span="12">

@@ -3,12 +3,9 @@
     <!-- 表单 -->
     <el-card class="login-card">
       <!-- 表单内容 -->
-      <!-- 头部logo部分 -->
+      <!-- 顶部logo -->
       <div class="title">
-        <p>
-          静&nbsp;待
-          <span>花</span>&nbsp;开
-        </p>
+        <img src="../../assets/img/w7.jpg" alt />
       </div>
       <!-- 表单绑定model属性 绑定rules属性(表单验证规则) -->
       <el-form ref="loginForm" :model="loginForm" :rules="loginRules" style="magin-top:20px">
@@ -20,7 +17,7 @@
         <!-- 验证码-->
         <el-form-item prop="code">
           <el-input v-model="loginForm.code" style="width:60%" placeholder="请输入验证码"></el-input>
-          <!-- 点击按钮 -->
+          <!-- 点击获取验证码按钮 -->
           <el-button style="float:right" plain>发送验证码</el-button>
         </el-form-item>
         <!-- 表单域 -->
@@ -136,14 +133,7 @@ export default {
     .title {
       text-align: center;
       height: 40px;
-      margin-bottom: 5px;
-      p {
-        font-size: 26px;
-        color: lightcyan;
-        span {
-          color: lavenderblush;
-        }
-      }
+      margin-bottom: 28px;
     }
   }
 }
